@@ -14,7 +14,7 @@ public class Task18 {
     }
 }
 
-public class Person implements RepkaItem {
+class Person implements RepkaItem {
     private String name;
     private String namePadezh;
 
@@ -39,11 +39,11 @@ public class Person implements RepkaItem {
     }
 }
 
-public interface RepkaItem {
+interface RepkaItem {
     String getNamePadezh();
 }
 
-public class RepkaStory {
+class RepkaStory {
     static void tell(List<Person> items) {
 
         for (int i = items.size() - 1; i > 0; i--) {
